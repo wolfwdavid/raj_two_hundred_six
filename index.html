@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RAJ · 206 // RAJ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; margin: 0; }
+  body { min-height: 100vh; background: #02040d; color: #cfe6ff;
+    font-family: 'Share Tech Mono', monospace; display: grid; place-items: center;
+    overflow: hidden; }
+  .glow { position: fixed; inset: 0; background:
+    radial-gradient(circle at 50% 45%, rgba(60,120,255,.18), transparent 60%); }
+  .card { position: relative; text-align: center; padding: 3rem 3.5rem;
+    border: 1px solid rgba(90,160,255,.28); background: rgba(4,10,28,.6);
+    box-shadow: 0 0 40px rgba(40,110,255,.15), inset 0 0 40px rgba(30,80,220,.08);
+    backdrop-filter: blur(3px);
+    clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px)); }
+  h1 { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: clamp(2rem,7vw,3.4rem);
+    letter-spacing: .4em; color: #eaf5ff; text-shadow: 0 0 22px rgba(120,190,255,.9); }
+  .rule { width: 60%; height: 1px; margin: 1.1rem auto;
+    background: linear-gradient(90deg, transparent, #5f9dff, transparent); }
+  .status { display: inline-flex; align-items: center; gap: .5rem; font-size: .8rem;
+    letter-spacing: .35em; color: #6cffb0; text-shadow: 0 0 10px rgba(80,255,160,.6); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #6cffb0;
+    box-shadow: 0 0 10px #6cffb0; animation: p 1.6s ease-in-out infinite; }
+  @keyframes p { 0%,100%{opacity:.4;transform:scale(.8)} 50%{opacity:1;transform:scale(1.2)} }
+  a.back { display: inline-block; margin-top: 1.8rem; font-size: .72rem; letter-spacing: .22em;
+    color: #8fc6ff; text-decoration: none; border: 1px solid rgba(90,160,255,.35);
+    padding: .5rem 1rem; border-radius: 999px; transition: .25s; }
+  a.back:hover { color: #eaf5ff; border-color: rgba(160,220,255,.9);
+    box-shadow: 0 0 20px rgba(120,220,255,.5); }
+</style></head><body>
+<div class="glow"></div>
+<main class="card">
+  <h1>RAJ · 206</h1>
+  <div class="rule"></div>
+  <div class="status"><span class="dot"></span>NODE ONLINE</div>
+  <div><a class="back" href="https://wolfwdavid.github.io/raj_one/">&#8249; OPS DASHBOARD</a></div>
+</main>
+</body></html>
